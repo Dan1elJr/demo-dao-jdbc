@@ -53,7 +53,6 @@ public class DB {
     public static void closeConnection(){
         if(conn != null){
             try{
-            
                 conn.close();
             }
             catch(SQLException e){
@@ -61,8 +60,6 @@ public class DB {
             }
         }
     }
-    
-    
     
     //Fechar os estados de consulta e resultado sql
     public static void closeStatement(Statement st){
